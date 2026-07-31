@@ -17,20 +17,6 @@ This project is the reference implementation of a peer-reviewed book chapter:
 > Published 10 July 2026.
 > DOI: [10.1007/978-3-032-27563-9_21](https://doi.org/10.1007/978-3-032-27563-9_21)
 
-```bibtex
-@incollection{lison2026edudell,
-  title     = {EDU-DELL: An AI-Powered Educational Platform for Automated Content Extraction and Assessment Generation},
-  author    = {Lison, Nileena and Shaji, Liyan Grace and Lakshmi, K. S.},
-  booktitle = {Smart Trends in Computing and Communications},
-  editor    = {Senjyu, Tomonobu and Mahmud, Mufti and Joshi, Amit},
-  series    = {Lecture Notes in Networks and Systems},
-  volume    = {1997},
-  pages     = {220--234},
-  publisher = {Springer, Cham},
-  year      = {2026},
-  doi       = {10.1007/978-3-032-27563-9_21}
-}
-```
 
 The paper's architecture, algorithms (Sections 3.1–3.5), and evaluation
 methodology (Tables 1–5) are implemented end-to-end in this repository — see
