@@ -1,0 +1,28 @@
+# Backend
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.env
+backend/chroma_data/
+backend/attempts.db
+backend/.pytest_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Editor/OS
+.DS_Store
+
+# Local tooling config (not app source)
+.claude/
+
+# Publisher's manuscript file — not redistributed publicly; see README "Publication" section
+Abstract.docx
+
+# Original UI reference screenshots (design input, not app output)
+images/
+
+# Original task instructions (local only, not app source)
+instructions.md

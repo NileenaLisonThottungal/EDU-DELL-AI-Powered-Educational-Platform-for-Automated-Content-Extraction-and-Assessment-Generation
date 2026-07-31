@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: 'Georgia', serif; color: #1a1a1a; padding: 32px; }
+  h1 { font-size: 22px; border-bottom: 2px solid #2b6777; padding-bottom: 8px; }
+  .meta { color: #555; font-size: 12px; margin-bottom: 24px; }
+  .question { margin-bottom: 18px; page-break-inside: avoid; }
+  .question h2 { font-size: 14px; margin: 0 0 6px 0; }
+  .options { margin: 0; padding-left: 18px; }
+  .options li { margin-bottom: 4px; }
+  .blank { font-style: italic; color: #2b6777; }
+</style>
+</head>
+<body>
+  <h1>EDU-DELL — {{ quiz_type_label }} Quiz</h1>
+  <div class="meta">{{ question_count }} questions{% if difficulty %} &middot; Difficulty: {{ difficulty }}{% endif %}</div>
+
+  {% for q in questions %}
+  <div class="question">
+    <h2>{{ loop.index }}. {{ q.question }}</h2>
+    {% if q.options %}
+    <ul class="options">
+      {% for option in q.options %}
+      <li>{{ option }}</li>
+      {% endfor %}
+    </ul>
+    {% elif q.correct_answer in [true, false] %}
+    <ul class="options">
+      <li>True</li>
+      <li>False</li>
+    </ul>
+    {% else %}
+    <p class="blank">Your answer: ______________________</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</body>
+</html>
